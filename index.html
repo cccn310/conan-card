@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名侦探柯南生日贺卡集</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 侦探剧场背景 -->
+    <div class="detective-bg">
+        <div class="stars"></div>
+        <div class="gears-container">
+            <div class="gear gear-large"></div>
+            <div class="gear gear-medium"></div>
+            <div class="gear gear-small"></div>
+        </div>
+    </div>
+
+    <!-- 顶部高端剧场标题 -->
+    <div class="header-container">
+        <span class="sub-header-title">THE DETECTIVE CONAN SERIES</span>
+        <h1 class="main-header-title">真相只有一个 · 生日物语</h1>
+    </div>
+
+    <!-- 顶栏：角色切换卡 -->
+    <div class="switcher-container">
+        <button class="switch-btn active" id="tab-shinichi">工藤新一</button>
+        <button class="switch-btn" id="tab-ran">毛利兰</button>
+        <button class="switch-btn" id="tab-kid">怪盗基德</button>
+        <button class="switch-btn" id="tab-heiji">服部平次</button>
+        <button class="switch-btn" id="tab-kazuha">远山和叶</button>
+        <button class="switch-btn" id="tab-kogoro">毛利小五郎</button>
+    </div>
+
+    <!-- 贺卡主体区域 -->
+    <div class="cards-stage">
+        
+        <!-- ==================== 工藤新一贺卡 ==================== -->
+        <div class="card-container active" id="container-shinichi">
+            <div class="card" id="card-shinichi">
+                <div class="card-face card-front">
+                    <div class="image-wrapper">
+                        <img src="./shinichi.png" alt="工藤新一" class="character-img">
+                        <div class="card-frame-decoration"></div>
+                    </div>
+                    <div class="front-footer">
+                        <p class="mystery-hint">“嘘……这起特殊的案件，正等待被你侦破。”</p>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="back-content">
+                        <div class="detective-badge-icon"></div>
+                        <h2 class="letter-title">DECRYPTION COMPLETE</h2>
+                        <div class="letter-divider"></div>
+                        <div class="letter-body">
+                            <p class="whisper">“嘘……小声点。我推掉了所有的棘手案件，甚至避开了小兰的视线，只为了在此时此刻，把这起特殊的『案件』侦破。”</p>
+                            <p class="reasoning">“经过我多达100次的严密推理与现场取证，所有的线索和物理规律都指向了一个不可逆的终极结论——”</p>
+                            <p class="truth">“真相只有一个！”</p>
+                            <p class="conclusion">那就是：你今天又漂亮了一岁！这个结论无懈可击，不接受反驳哦。</p>
+                        </div>
+                        <div class="letter-signature">
+                            <span class="sign-title">平成的福尔摩斯</span>
+                            <span class="sign-name">工藤 新一</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 毛利兰贺卡 ==================== -->
+        <div class="card-container" id="container-ran">
+            <div class="card" id="card-ran">
+                <div class="card-face card-front">
+                    <div class="image-wrapper">
+                        <img src="./ran.png" alt="毛利兰" class="character-img">
+                        <div class="card-frame-decoration"></div>
+                    </div>
+                    <div class="front-footer">
+                        <p class="mystery-hint">“把双手合十，闭上眼睛，来许下心愿吧。”</p>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="back-content">
+                        <div class="heart-badge-icon"></div>
+                        <h2 class="letter-title letter-title-ran">BIRTHDAY WISH</h2>
+                        <div class="letter-divider"></div>
+                        <div class="letter-body">
+                            <p class="whisper">“你知道吗？哪怕是跨越漫长的等待，或者是再遥远的距离，守护你的决心也绝对不会有任何动摇。”</p>
+                            <p class="reasoning">“今天就暂时把那个‘推理狂’扔在一边，由我来承包你新一岁里所有的好运与快乐。”</p>
+                            <p class="truth truth-ran">“生日快乐！”</p>
+                            <p class="conclusion">愿你新的一岁每天都像樱花盛开时一样，开开心心地笑出来哦。</p>
+                        </div>
+                        <div class="letter-signature">
+                            <span class="sign-title">帝丹高中的空手道部主将</span>
+                            <span class="sign-name">毛利 兰</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 怪盗基德贺卡 ==================== -->
+        <div class="card-container" id="container-kid">
+            <div class="card" id="card-kid">
+                <div class="card-face card-front">
+                    <div class="image-wrapper">
+                        <img src="./kid.png" alt="怪盗基德" class="character-img">
+                        <div class="card-frame-decoration"></div>
+                    </div>
+                    <div class="front-footer">
+                        <p class="mystery-hint">“今晚零点，我将准时拜访，盗走属于你的秘密。”</p>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="back-content">
+                        <div class="kid-badge-icon"></div>
+                        <h2 class="letter-title letter-title-kid">KID's NOTICE</h2>
+                        <div class="letter-divider"></div>
+                        <div class="letter-body">
+                            <p class="whisper">“今晚，我将准时盗走你身上所有的压力与烦恼，并在你心里留下一份无与伦比的生日奇迹。”</p>
+                            <p class="reasoning">“请做好准备——这可不是虚幻的魔术，而是只属于你的现实。”</p>
+                            <p class="truth truth-kid">“生日快乐！”</p>
+                            <p class="conclusion">愿你在新的一岁里，继续闪耀出最明亮的光芒，Ladies and Gentlemen！”</p>
+                        </div>
+                        <div class="letter-signature">
+                            <span class="sign-title">月光下的魔术师</span>
+                            <span class="sign-name">怪盗 基德</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 服部平次贺卡 ==================== -->
+        <div class="card-container" id="container-heiji">
+            <div class="card" id="card-heiji">
+                <div class="card-face card-front">
+                    <div class="image-wrapper">
+                        <img src="./heiji.png" alt="服部平次" class="character-img">
+                        <div class="card-frame-decoration"></div>
+                    </div>
+                    <div class="front-footer">
+                        <p class="mystery-hint">“笨蛋，骑稳我的摩托车，出发啦！”</p>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="back-content">
+                        <div class="motor-badge-icon"></div>
+                        <h2 class="letter-title letter-title-heiji">KANSAI DETECTIVE</h2>
+                        <div class="letter-divider"></div>
+                        <div class="letter-body">
+                            <p class="whisper">“喂喂！我可是特意骑着摩托车从大阪一路狂飙过来的，绝对不能输给东京那个推理狂！”</p>
+                            <p class="reasoning">“新的一年，不管是遇到什么想不通的难题，尽管交给我这个关西名侦探来解决吧！”</p>
+                            <p class="truth truth-heiji">“生日快乐！”</p>
+                            <p class="conclusion">听好了，新的一岁，要继续元气满满、痛痛快快地和我一起冒险啊！</p>
+                        </div>
+                        <div class="letter-signature">
+                            <span class="sign-title">改方学园的高中生侦探</span>
+                            <span class="sign-name">服部 平次</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 远山和叶贺卡 ==================== -->
+        <div class="card-container" id="container-kazuha">
+            <div class="card" id="card-kazuha">
+                <div class="card-face card-front">
+                    <div class="image-wrapper">
+                        <img src="./kazuha.png" alt="远山和叶" class="character-img">
+                        <div class="card-frame-decoration"></div>
+                    </div>
+                    <div class="front-footer">
+                        <p class="mystery-hint">“这是特意为你求的御守哦，要收好它！”</p>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="back-content">
+                        <div class="omamori-badge-icon"></div>
+                        <h2 class="letter-title letter-title-kazuha">LUCKY CHARM</h2>
+                        <div class="letter-divider"></div>
+                        <div class="letter-body">
+                            <p class="whisper">“这是我亲手为你编织和求来的生日御守，里面可是塞满了全日本最灵验的幸运哦！”</p>
+                            <p class="reasoning">“虽然某个木头侦探整天只知道推理，但我们女孩子的友情与祝福永远是最靠得住的！”</p>
+                            <p class="truth truth-kazuha">“祝你生日快乐！”</p>
+                            <p class="conclusion">不许弄丢御守，新的一年里，每天都要开开心心、平平安安度过这最棒的日子！</p>
+                        </div>
+                        <div class="letter-signature">
+                            <span class="sign-title">改方学园的高二元气少女</span>
+                            <span class="sign-name">远山 和叶</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 毛利小五郎贺卡 ==================== -->
+        <div class="card-container" id="container-kogoro">
+            <div class="card" id="card-kogoro">
+                <div class="card-face card-front">
+                    <div class="image-wrapper">
+                        <img src="./kogoro.png" alt="毛利小五郎" class="character-img">
+                        <div class="card-frame-decoration"></div>
+                    </div>
+                    <div class="front-footer">
+                        <p class="mystery-hint">“哈哈哈！沉睡的小五郎今天醒来祝寿啦！”</p>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="back-content">
+                        <div class="beer-badge-icon"></div>
+                        <h2 class="letter-title letter-title-kogoro">FAMOUS DETECTIVE</h2>
+                        <div class="letter-divider"></div>
+                        <div class="letter-body">
+                            <p class="whisper">“哇哈哈哈！既然是你的生日，那今天就由我这位名震全日本的名侦探——毛利小五郎大人亲自降临！”</p>
+                            <p class="reasoning">“哪怕是那个小鬼头柯南在旁边转悠，也别想盖过我这位‘沉睡的名侦探’的寿星祝辞气场！”</p>
+                            <p class="truth truth-kogoro">“干杯！生日快乐！”</p>
+                            <p class="conclusion">今天尽情地吃蛋糕、喝果汁庆祝吧！新的一岁，继续崇拜本大侦探的帅气表现吧！</p>
+                        </div>
+                        <div class="letter-signature">
+                            <span class="sign-title">毛利侦探事务所</span>
+                            <span class="sign-name">毛利 小五郎</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 底部翻转操作按钮 -->
+    <div class="action-container">
+        <button class="bow-tie-btn" id="flip-btn">
+            <span class="btn-icon" id="btn-icon">🎀</span>
+            <span class="btn-text" id="btn-text">解密生日真相</span>
+        </button>
+    </div>
+
+    <!-- 页脚精致版权行 -->
+    <div class="footer-container">
+        <p class="footer-text">© 2026 DETECTIVE CONAN BIRTHDAY CARD · DESIGNED BY NAN CAO</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
