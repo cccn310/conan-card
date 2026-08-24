@@ -11,11 +11,15 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* 改为从上部对齐 */
     align-items: center;
-    overflow: hidden;
+    overflow-y: auto; /* 允许手机上下滑动 */
+    overflow-x: hidden;
     color: #fff;
     perspective: 1500px;
+    padding: 30px 10px 80px 10px; /* 增加底部防遮挡呼吸安全边距 */
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch; /* 保证 iOS 端极其平滑的弹性手势滚动 */
 }
 
 /* 动态背景微粒与齿轮 */
